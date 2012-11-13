@@ -1,4 +1,11 @@
-cd ..
+$originalPath = $(pwd).path
+
+$fullPathIncFileName = $MyInvocation.MyCommand.Definition
+$currentScriptName = $MyInvocation.MyCommand.Name
+$currentExecutingPath = $fullPathIncFileName.Replace($currentScriptName, "")
+$resolved = Resolve-Path "$currentExecutingPath..\..\"
+
+cd $resolved
 
 foreach($dir in dir)
 {
@@ -23,4 +30,4 @@ foreach($dir in dir)
     git pull
 }
 
-cd ..
+cd $originalPath
