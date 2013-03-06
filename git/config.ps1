@@ -12,3 +12,4 @@ git config --global alias.graph "log --graph --pretty=format':%C(yellow)%h%Cblue
 git config --global alias.publishazure "push azure master"
 git config --global alias.publishheroku "push heroku master"
 git config --global alias.deletelastcommit "reset --hard HEAD^"
+git config --global alias.rank "shortlog -sn"
