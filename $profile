@@ -1,3 +1,7 @@
+
+# Load posh-git example profile
+. 'C:\tools\poshgit\dahlbyk-posh-git-3db1e6e\profile.example.ps1'
+
 Function ss {
     foreach($file in ls) 
     {
@@ -9,6 +13,6 @@ Function ss {
 }
 
 Function subl {
-	&"C:\Program Files\Sublime Text 2\sublime_text.exe" $args
+	&"C:\Program Files\Sublime Text 3\sublime_text.exe" $args
 }
 
