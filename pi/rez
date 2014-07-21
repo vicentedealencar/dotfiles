@@ -1,0 +1,6 @@
+#!/bin/bash
+# Change resolution
+# rez 320 240
+
+fbset -g $1 $2 $1 $2 16
+xrefresh
