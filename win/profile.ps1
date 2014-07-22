@@ -35,3 +35,5 @@ function bring-branch ($branch) {
     . 'git' 'checkout' '-'
     . 'git' 'merge' $branch
 }
+
+echo 'profile loaded'
