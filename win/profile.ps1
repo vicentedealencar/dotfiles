@@ -20,7 +20,7 @@ Set-Alias gut git
 function ss {
     foreach($file in ls) {
         if($file.Name.Contains('.sln')) {
-            Write-Host 'Starting $file'
+            Write-Host "Starting $file"
             start $file
         }
     }
