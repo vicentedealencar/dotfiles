@@ -13,6 +13,8 @@ Set-Alias scriptcs 'C:\Users\Vicente\Documents\GitHub\scriptcs\src\Scriptcs\bin\
 
 Set-Alias elasticsearch 'C:\bin\elasticsearch-0.90.5-vanilla\elasticsearch-0.90.5\bin\elasticsearch.bat'
 
+Set-Alias makecert 'C:\Program Files (x86)\Windows Kits\8.1\bin\x64\makecert.exe'
+
 Set-Alias CHROME_BIN 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe'
 
 Set-Alias gut git
