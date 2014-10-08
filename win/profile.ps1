@@ -1,12 +1,3 @@
-# Load posh-git example profile
-. 'C:\Users\Vicente\Documents\WindowsPowerShell\Modules\posh-git\profile.example.ps1'
-
-
-# Load posh-npm example profile
-. 'C:\Users\Vicente\Documents\WindowsPowerShell\Modules\posh-npm\profile.example.ps1'
-
-Set-Alias subl 'C:\Program Files\Sublime Text 3\sublime_text.exe'
-
 Set-Alias nuget 'C:\Users\Vicente\Downloads\NuGet.exe'
 
 Set-Alias scriptcs 'C:\Users\Vicente\Documents\GitHub\scriptcs\src\Scriptcs\bin\Release\Scriptcs.exe'
