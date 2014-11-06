@@ -13,12 +13,19 @@ Set-Alias CHROME_BIN 'C:\Program Files (x86)\Google\Chrome\Application\chrome.ex
 Set-Alias gut git
 
 function ss {
-    foreach($file in ls) {
-        if($file.Name.Contains('.sln')) {
-            Write-Host "Starting $file"
-            start $file
-        }
+    $slns = ls -r *.sln
+
+    if ($slns.GetType().Name -eq 'Object[]') {
+
+        Write-Host "More than one .sln found" -ForegroundColor Red
+        #TODO if more than one asks what to do
+        return;
     }
+
+    $sln = $slns[0]
+
+    Write-Host "Starting $sln"
+    start $sln
 }
 
 function gut() { . 'git' $args }
