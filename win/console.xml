@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <settings>
 	<console change_refresh="10" refresh="100" rows="25" columns="80" buffer_rows="500" buffer_columns="0" shell="" init_dir="C:\Users\Vicente\Projects" start_hidden="0" save_size="0" background_text_opacity="255">
-		<colors background_text_opacity="255">
+		<colors>
 			<color id="0" r="0" g="0" b="0"/>
 			<color id="1" r="0" g="0" b="128"/>
 			<color id="2" r="0" g="150" b="0"/>
@@ -19,12 +19,6 @@
 			<color id="14" r="255" g="255" b="0"/>
 			<color id="15" r="255" g="255" b="255"/>
 		</colors>
-		<cursor style="0" r="255" g="255" b="255"/>
-		<background type="0" r="0" g="0" b="0">
-			<image file="" relative="0" extend="0" position="0">
-				<tint opacity="0" r="0" g="0" b="0"/>
-			</image>
-		</background>
 	</console>
 	<appearance>
 		<font name="Consolas" size="14" bold="0" italic="0" smoothing="0" bold_intensified="0" italic_intensified="0" extra_width="0">
@@ -36,7 +30,7 @@
 			<selection_color r="255" g="255" b="255"/>
 		</styles>
 		<position x="-1" y="-1" dock="-1" snap="-1" z_order="0" save_position="0" w="-1" h="-1" save_size="0"/>
-		<transparency type="1" active_alpha="215" inactive_alpha="215" r="0" g="0" b="0"/>
+		<transparency type="1" active_alpha="214" inactive_alpha="214" r="0" g="0" b="0"/>
 		<fullscreen start_in_fullscreen="0" fullscreen_monitor="0"/>
 	</appearance>
 	<behavior>
@@ -47,9 +41,7 @@
 		<focus follow_mouse="0"/>
 		<instance allow_multi="1"/>
 		<clone use_current_dir="1"/>
-		<search match_case="0" match_whole_word="0"/>
-		<runas use_credprov="1"/>
-	</behavior>
+		<search match_case="0" match_whole_word="0"/><runas use_credprov="1"/></behavior>
 	<hotkeys use_scroll_lock="1">
 		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="83" command="settings"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="112" command="help"/>
@@ -104,11 +96,10 @@
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="71" command="ungroupall"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="grouptab"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="84" command="ungrouptab"/>
-		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="clear"/>
-		<hotkey ctrl="1" shift="0" alt="0" extended="1" code="45" command="copy"/>
+		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="67" command="copy"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="65" command="selectall"/>
 		<hotkey ctrl="1" shift="0" alt="0" extended="1" code="46" command="clear_selection"/>
-		<hotkey ctrl="0" shift="1" alt="0" extended="1" code="45" command="paste"/>
+		<hotkey ctrl="1" shift="0" alt="0" extended="0" code="86" command="paste"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="stopscroll"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="scrollrowup"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="scrollrowdown"/>
@@ -122,9 +113,6 @@
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="findnext"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="findprev"/>
 		<hotkey ctrl="1" shift="1" alt="0" extended="0" code="112" command="dumpbuffer"/>
-		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="cmdMenu1"/>
-		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="cmdMenu2"/>
-		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="cmdMenu3"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd1"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd2"/>
 		<hotkey ctrl="0" shift="0" alt="0" extended="0" code="0" command="externalcmd3"/>
@@ -140,26 +128,34 @@
 	<mouse>
 		<actions>
 			<action ctrl="0" shift="0" alt="0" button="1" name="copy"/>
-			<action ctrl="0" shift="1" alt="0" button="1" name="select"/>
+			<action ctrl="0" shift="0" alt="0" button="1" name="select"/>
 			<action ctrl="0" shift="0" alt="0" button="0" name="select_column"/>
 			<action ctrl="0" shift="0" alt="0" button="3" name="paste"/>
 			<action ctrl="1" shift="0" alt="0" button="1" name="drag"/>
-			<action ctrl="0" shift="0" alt="0" button="4" name="link"/>
 			<action ctrl="0" shift="0" alt="0" button="2" name="menu"/>
 			<action ctrl="0" shift="0" alt="0" button="0" name="menu2"/>
 			<action ctrl="0" shift="0" alt="0" button="0" name="menu3"/>
 		</actions>
 	</mouse>
 	<tabs>
-		<tab title="PowerShell" use_default_icon="0">
-			<console shell="%SystemRoot%\syswow64\WindowsPowerShell\v1.0\powershell.exe" init_dir="" priority="2" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
+		<tab title="PowerShell" icon="C:\Users\Vicente\Downloads\1409564546_17547.ico" use_default_icon="0">
+			<console shell="C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell.exe" init_dir="C:\Users\Vicente\Projects" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
+			<cursor style="0" r="255" g="255" b="255"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
+		</tab>
+		<tab title="ConsoleZ" use_default_icon="0">
+			<console shell="" init_dir="" run_as_user="0" user="" net_only="0" run_as_admin="0"/>
+			<cursor style="0" r="255" g="255" b="255"/>
+			<background type="0" r="0" g="0" b="0">
+				<image file="" relative="0" extend="0" position="0">
+					<tint opacity="0" r="0" g="0" b="0"/>
+				</image>
+			</background>
 		</tab>
 	</tabs>
 	<external_commands>
-
-
-
-
-
-</external_commands>
-</settings>
+</external_commands></settings>
