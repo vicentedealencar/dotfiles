@@ -12,6 +12,10 @@ Set-Alias CHROME_BIN 'C:\Program Files (x86)\Google\Chrome\Application\chrome.ex
 
 Set-Alias subl 'C:\Program Files\Sublime Text 3\sublime_text.exe'
 
+Set-Alias python 'C:\Python27\python.exe'
+
+Set-Alias msbuild 'C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe'
+
 Set-Alias gut git
 
 function ss {
